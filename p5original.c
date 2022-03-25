@@ -20,7 +20,6 @@ void erotosthenes_sieve(int n,int a[n])
   int i=0;
   while(i<sqrt(n))
     {
-      /*make the multiples of i zero*/
       while(a[i]==0 && i<sqrt(n))i++;
       for(int k=i+i;k<n;k+=i)
         a[k]=0;
