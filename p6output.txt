@@ -1,1 +1,130 @@
-
+Breakpoint 1, main () at p6original.c:37
+37  {
+(gdb) n
+40      input_string(string,substring);
+(gdb) n
+Enter the string
+hello
+Enter the substring
+world
+41      index=str_reverse(string,substring);
+(gdb) s
+str_reverse (string=0x7ffd7d86fcf0 "hello", 
+    substring=0x7ffd7d86fdc0 "world") at p6original.c:10
+10      int count=0;int count1=0;int index,i,j;
+(gdb) n
+11      for (i=0;string[i]!='\0';i++)
+(gdb) n
+13          count++;
+(gdb) n
+11      for (i=0;string[i]!='\0';i++)
+(gdb) n
+13          count++;
+(gdb) n
+11      for (i=0;string[i]!='\0';i++)
+(gdb) n
+13          count++;
+(gdb) n
+11      for (i=0;string[i]!='\0';i++)
+(gdb) n
+13          count++;
+(gdb) n
+11      for (i=0;string[i]!='\0';i++)
+(gdb) n
+13          count++;
+(gdb) n
+11      for (i=0;string[i]!='\0';i++)
+(gdb) n
+15      for (int i=0;substring[i]!='\0';i++){
+(gdb) n
+16          count1++;
+(gdb) n
+15      for (int i=0;substring[i]!='\0';i++){
+(gdb) n
+16          count1++;
+(gdb) n
+15      for (int i=0;substring[i]!='\0';i++){
+(gdb) n
+16          count1++;
+(gdb) n
+15      for (int i=0;substring[i]!='\0';i++){
+(gdb) n
+16          count1++;
+(gdb) n
+15      for (int i=0;substring[i]!='\0';i++){
+(gdb) n
+16          count1++;
+(gdb) n
+15      for (int i=0;substring[i]!='\0';i++){
+(gdb) n
+18      if(count1>count){
+(gdb) n
+21      for( i=0;i<count;i++){
+(gdb) n
+22          for( j=0;j<count1;j++){
+(gdb) n
+23              if(string[i+j]!=substring[j]){
+(gdb) n
+24                  break;
+(gdb) n
+27          if(j==count1){
+(gdb) n
+21      for( i=0;i<count;i++){
+(gdb) n
+22          for( j=0;j<count1;j++){
+(gdb) n
+23              if(string[i+j]!=substring[j]){
+(gdb) n
+24                  break;
+(gdb) n
+27          if(j==count1){
+(gdb) n
+21      for( i=0;i<count;i++){
+(gdb) n
+22          for( j=0;j<count1;j++){
+(gdb) n
+23              if(string[i+j]!=substring[j]){
+(gdb) n
+24                  break;
+(gdb) n
+27          if(j==count1){
+(gdb) n
+21      for( i=0;i<count;i++){
+(gdb) n
+22          for( j=0;j<count1;j++){
+(gdb) n
+23              if(string[i+j]!=substring[j]){
+(gdb) n
+24                  break;
+(gdb) n
+27          if(j==count1){
+(gdb) n
+21      for( i=0;i<count;i++){
+(gdb) n
+22          for( j=0;j<count1;j++){
+(gdb) n
+23              if(string[i+j]!=substring[j]){
+(gdb) n
+24                  break;
+(gdb) n
+27          if(j==count1){
+(gdb) n
+21      for( i=0;i<count;i++){
+(gdb) n
+31      return index;
+(gdb) n
+32  }
+(gdb) n
+main () at p6original.c:42
+42      output(string,substring,index);
+(gdb) s
+output (string=0x7ffd7d86fcf0 "hello", substring=0x7ffd7d86fdc0 "world", 
+    index=2105998784) at p6original.c:34
+34      printf("The index of %s in %s is %d",substring,string,index);
+(gdb) n
+35  }
+(gdb) n
+main () at p6original.c:43
+43      return 0;
+(gdb) n
+44  }(gdb) 
