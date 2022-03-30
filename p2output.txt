@@ -1,1 +1,49 @@
-
+Breakpoint 1, main () at p2original.c:35
+35  {
+(gdb) n
+37    input_line(&x1,&y1);
+(gdb) n
+enter a numbers
+3
+4
+5
+38    input_line(&x2,&y2);
+(gdb) n
+enter a numbers
+6
+9
+39    input_line(&x3,&y3);
+(gdb) n
+enter a numbers
+8
+6
+40    is_triangle(x1,y1,x2,y2,x3,y3);
+(gdb) s
+is_triangle (x1=3, y1=4, x2=5, y2=6, x3=9, y3=8) at p2original.c:11
+11    d1=sqrt((x2-x1)*(x2-x1)+(y2-y1)*(y2-y1));
+(gdb) n
+12    d2=sqrt((x3-x2)*(x3-x2)+(y3-y2)*(y3-y2));
+(gdb) n
+13    d3=sqrt((x3-x1)*(x3-x1)+(y3-y1)*(y3-y1));
+(gdb) n
+14    if ( d1+d2>d3 && d2+d3>d1 && d3+d1>d2)
+(gdb) n
+16      return 1;
+(gdb) n
+22  }
+(gdb) n
+main () at p2original.c:41
+41    output(triangle);
+(gdb) s
+output (triangle=4.59163468e-41) at p2original.c:25
+25    if(triangle==0)
+(gdb) n
+31      printf("it doesnot forms a triangle\n");
+(gdb) n
+it doesnot forms a triangle
+33  }
+(gdb) n
+main () at p2original.c:42
+42    return 0;
+(gdb) n
+43  }(gdb) 
