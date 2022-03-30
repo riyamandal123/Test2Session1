@@ -1,1 +1,31 @@
-
+Breakpoint 1, main () at p1original.c:17
+17  {
+(gdb) n
+19    input(&x1,&y1,&x2,&y2);
+(gdb) n
+enter a number
+3
+4
+5
+6
+7
+20    find_distance(x1,y1,x2,y2,&area);
+(gdb) s
+find_distance (x1=3, y1=4, x2=5, y2=6, area=0x7fff0fbb91f4) at p1original.c:10
+10    *area=sqrt((x2-x1)*(x2-x1)+(y2-y1)*(y2-y1));
+(gdb) n
+11  }
+(gdb) n
+main () at p1original.c:21
+21    output(area);
+(gdb) s
+output (area=2.82842708) at p1original.c:14
+14    printf("the distance between two points is %f\n",area);
+(gdb) n
+the distance between two points is 2.828427
+15  }
+(gdb) n
+main () at p1original.c:22
+22    return 0;
+(gdb) n
+23  }(gdb)
