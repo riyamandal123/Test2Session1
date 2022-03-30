@@ -1,1 +1,30 @@
-
+Breakpoint 1, main () at p3original.c:39
+39    n=input_number();
+(gdb) n
+enter a number
+3
+40    prime=is_prime(n);
+(gdb) s
+is_prime (n=3) at p3original.c:12
+12    for(int i=2;i<=n/2;i++)
+(gdb) n
+23    return prime;
+(gdb) n
+24  }
+(gdb) n
+main () at p3original.c:41
+41    output(n,prime);
+(gdb) s
+output (n=3, prime=-2060283180) at p3original.c:27
+27    if(prime==0)
+(gdb) n
+33      printf("%d is a prime number\n",n);
+(gdb) n
+3 is a prime number
+35  }
+(gdb) n
+main () at p3original.c:42
+42    return 0;
+(gdb) n
+43  }
+(gdb) 
