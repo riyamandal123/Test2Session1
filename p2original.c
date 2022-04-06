@@ -37,7 +37,7 @@ int main()
   input_line(&x1,&y1);
   input_line(&x2,&y2);
   input_line(&x3,&y3);
-  is_triangle(x1,y1,x2,y2,x3,y3);
+  triangle=is_triangle(x1,y1,x2,y2,x3,y3);
   output(triangle);
   return 0;
 }
